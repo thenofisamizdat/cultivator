@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="2.0"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:orientation="vertical"
+              style="@style/AppTheme">
+
+    <ImageView
+            android:layout_width="wrap_content"
+
+            android:layout_height="0dp"
+            android:id="@+id/logo"
+            android:src="@drawable/cultivator"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_horizontal" />
+
+
+    <Button
+            android:id="@+id/newStory"
+            style="@style/ButtonStyle"
+            android:tag="story"
+            android:layout_weight="0.3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/newStory"
+            />
+
+        <LinearLayout
+                android:id="@+id/buttons"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:paddingTop="10dp"
+                android:paddingBottom="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2.0">
+            <Button
+                    android:id="@+id/newNote"
+                    android:tag="note"
+                    style="@style/ButtonStyle"
+                    android:layout_weight="1.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="@string/newNote"
+                    />
+            <Button
+                    android:id="@+id/newImage"
+                    style="@style/ButtonStyle"
+                    android:tag="imaGE"
+                    android:layout_weight="1.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="@string/newImage"
+                    />
+
+        </LinearLayout>
+
+    <Button
+            android:id="@+id/myList"
+            style="@style/ButtonStyle"
+            android:layout_weight="0.3"
+            android:tag="list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/myList"
+           />
+
+</LinearLayout>

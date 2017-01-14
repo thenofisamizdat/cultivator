@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="2.0"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:orientation="vertical"
+              style="@style/AppTheme">
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:layout_gravity="center_horizontal">
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/logo"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:layout_height="match_parent"
+                android:src="@drawable/cultivator"
+                android:layout_gravity="center_horizontal"/>
+    </FrameLayout>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="@string/newImage"
+              android:paddingTop="10dp"
+              android:paddingBottom="10dp"/>
+    <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9"
+            style="@style/PreviewBG">
+        <TextView
+                android:background="@android:color/transparent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center"
+                android:padding="5dp"
+                android:text="@string/preview"
+                />
+    <ImageView
+            android:id="@+id/imagePreview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            />
+
+    </FrameLayout>
+
+    <EditText
+            android:id="@+id/imageDescription"
+            style="@style/textInput"
+            android:layout_width="match_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.25"
+            android:hint="@string/description"/>
+
+    <EditText
+            android:id="@+id/imagePath"
+            style="@style/textInput"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:layout_marginTop="5dp"
+            android:hint="@string/picture"/>
+
+
+    <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+        <Button
+                android:id="@+id/attachFromDevice"
+                style="@style/ButtonStyle"
+                android:layout_weight="1.0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/attachToStory"
+                />
+        <Button
+                android:id="@+id/previewImage"
+                style="@style/ButtonStyle"
+                android:layout_weight="1.0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/preview"
+                />
+
+    </LinearLayout>
+    <Button
+            android:id="@+id/create"
+            style="@style/ButtonStyle"
+            android:layout_weight="0.2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:text="@string/create"/>
+
+</LinearLayout>

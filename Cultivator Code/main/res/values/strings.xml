@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Cultivator</string>
+
+    <string name="attachNote">ATTACH NOTE</string>
+    <string name="attachImage">ATTACH IMAGE</string>
+    <string name="attachToStory">IMAGE FROM\n DEVICE</string>
+    <string name="storyTitleHint">input story title</string>
+    <string name="notesHint">input notes here</string>
+    <string name="preview">PREVIEW</string>
+    <string name="stories">STORIES</string>
+    <string name="notes">NOTES</string>
+    <string name="images">IMAGES</string>
+    <string name="importance">STORY IMPORTANCE RATING</string>
+    <string name="attachNewStory">ATTACH TO NEW STORY</string>
+    <string name="attachExistingStory">ATTACH TO EXISTING STORIES</string>
+    <string name="newStoryTitle">new story title</string>
+    <string name="create">CREATE</string>
+    <string name="picture">image url</string>
+    <string name="description">add description</string>
+    <string name="attachedTo">stories attached to:</string>
+    <string name="myList">MY LIST</string>
+    <string name="newStory">NEW STORY</string>
+    <string name="newNote">NEW NOTE</string>
+    <string name="newImage">NEW IMAGE</string>
+</resources>

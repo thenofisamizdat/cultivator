@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="2.0"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:orientation="vertical"
+              style="@style/AppTheme">
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="center_horizontal">
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/logo"
+                android:background="@android:color/transparent"
+                android:layout_gravity="center_horizontal"/>
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:adjustViewBounds="true"
+                android:layout_height="match_parent"
+                android:src="@drawable/cultivator"
+                android:layout_gravity="center_horizontal"/>
+    </FrameLayout>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/newStory"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+    <EditText
+            android:id="@+id/storyTitle"
+            style="@style/textInput"
+            android:layout_weight="0.5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/storyTitleHint"
+            />
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="@string/importance"
+              android:paddingTop="10dp"
+              android:paddingBottom="0dp"/>
+    <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/storyRating"
+            android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:paddingTop="10dp"
+            android:paddingBottom="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2.0">
+        <Button
+                android:id="@+id/attachNote"
+                style="@style/ButtonStyle"
+                android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/attachNote"
+                />
+        <Button
+                android:id="@+id/attachImage"
+                style="@style/ButtonStyle"
+                android:layout_weight="1.0"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/attachImage"
+                />
+
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/create"
+            style="@style/ButtonStyle"
+            android:layout_weight="0.3"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/create"
+            />
+
+
+</LinearLayout>
